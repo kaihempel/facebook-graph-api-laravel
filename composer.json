@@ -1,0 +1,69 @@
+{
+    "name": "kuweh/laravel-meta-graph",
+    "description": "Typisierter Laravel-Client für die Meta (Facebook) Graph API mit Fokus auf Facebook-Seiten.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "facebook",
+        "meta",
+        "graph-api",
+        "pages",
+        "reels",
+        "webhooks"
+    ],
+    "authors": [
+        {
+            "name": "Kai Hempel",
+            "email": "dev@kuweh.de"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^7.8",
+        "laravel/framework": "^12.0|^13.0",
+        "nesbot/carbon": "^3.8",
+        "spatie/laravel-package-tools": "^1.19"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.4",
+        "laravel/pint": "^1.20",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kuweh\\MetaGraph\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kuweh\\MetaGraph\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "format": "vendor/bin/pint",
+        "lint": "vendor/bin/pint --test"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kuweh\\MetaGraph\\MetaGraphServiceProvider"
+            ],
+            "aliases": {
+                "MetaGraph": "Kuweh\\MetaGraph\\Facades\\MetaGraph"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

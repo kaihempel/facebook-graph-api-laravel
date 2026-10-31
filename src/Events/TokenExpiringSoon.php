@@ -1,0 +1,21 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Kuweh\MetaGraph\Events;
+
+use Carbon\CarbonImmutable;
+use Kuweh\MetaGraph\Auth\AccessToken;
+
+/**
+ * Ein User Token läuft bald ab (Token-Check).
+ */
+final readonly class TokenExpiringSoon
+{
+    public function __construct(
+        public string $ownerType,
+        public string $ownerId,
+        public AccessToken $token,
+        public ?CarbonImmutable $expiresAt,
+    ) {}
+}

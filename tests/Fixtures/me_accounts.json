@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "access_token": "EAAG-ANONYMIZED-PAGE-TOKEN-1",
+            "category": "Restaurant",
+            "category_list": [{ "id": "273819889375819", "name": "Restaurant" }],
+            "name": "Testseite Eins",
+            "id": "111",
+            "tasks": ["ANALYZE", "ADVERTISE", "MESSAGING", "MODERATE", "CREATE_CONTENT", "MANAGE"]
+        },
+        {
+            "access_token": "EAAG-ANONYMIZED-PAGE-TOKEN-2",
+            "category": "Community",
+            "name": "Testseite Zwei",
+            "id": "222",
+            "tasks": ["ANALYZE"]
+        }
+    ],
+    "paging": {
+        "cursors": { "before": "QVFIUmBEFORE", "after": "QVFIUmAFTER" }
+    }
+}

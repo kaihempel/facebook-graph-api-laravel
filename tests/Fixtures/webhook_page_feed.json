@@ -1,0 +1,47 @@
+{
+    "object": "page",
+    "entry": [
+        {
+            "id": "111",
+            "time": 1793534400,
+            "changes": [
+                {
+                    "field": "feed",
+                    "value": {
+                        "from": { "id": "10000000001", "name": "Test User" },
+                        "item": "status",
+                        "post_id": "111_222",
+                        "verb": "add",
+                        "created_time": 1793534399,
+                        "is_hidden": false,
+                        "message": "Neuer Post"
+                    }
+                },
+                {
+                    "field": "feed",
+                    "value": {
+                        "from": { "id": "10000000002", "name": "Anonymous" },
+                        "post": { "status_type": "added_photos", "is_published": true, "updated_time": "2026-10-31T12:00:00+0000", "permalink_url": "https://www.facebook.com/111/posts/222", "promotion_status": "inactive", "id": "111_222" },
+                        "message": "Toller Beitrag!",
+                        "post_id": "111_222",
+                        "comment_id": "222_333",
+                        "created_time": 1793534400,
+                        "item": "comment",
+                        "parent_id": "111_222",
+                        "verb": "add"
+                    }
+                },
+                {
+                    "field": "mention",
+                    "value": {
+                        "post_id": "444_555",
+                        "sender_name": "Anonymous",
+                        "item": "post",
+                        "sender_id": "10000000003",
+                        "verb": "add"
+                    }
+                }
+            ]
+        }
+    ]
+}

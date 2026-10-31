@@ -1,0 +1,54 @@
+name: Live Tests
+
+# Optionale Tests gegen eine eigene Testseite mit Test-App.
+# Laufen nightly bzw. manuell und nur, wenn die Secrets gesetzt sind.
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  live:
+    name: Live (Graph API)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      META_LIVE_APP_ID: ${{ secrets.META_LIVE_APP_ID }}
+      META_LIVE_APP_SECRET: ${{ secrets.META_LIVE_APP_SECRET }}
+      META_LIVE_PAGE_ID: ${{ secrets.META_LIVE_PAGE_ID }}
+      META_LIVE_PAGE_TOKEN: ${{ secrets.META_LIVE_PAGE_TOKEN }}
+
+    steps:
+      - name: Check secrets
+        id: secrets
+        run: |
+          if [ -n "$META_LIVE_APP_ID" ] && [ -n "$META_LIVE_PAGE_TOKEN" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Live secrets are not configured, skipping live tests."
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.secrets.outputs.available == 'true'
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        if: steps.secrets.outputs.available == 'true'
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+          tools: composer:v2
+
+      - name: Install dependencies
+        if: steps.secrets.outputs.available == 'true'
+        run: composer update --prefer-stable --prefer-dist --no-interaction --no-progress
+
+      - name: Run live tests
+        if: steps.secrets.outputs.available == 'true'
+        run: vendor/bin/pest --group=live

@@ -1,0 +1,25 @@
+{
+    "data": {
+        "app_id": "1234567890",
+        "type": "PAGE",
+        "application": "Kuweh Test App",
+        "data_access_expires_at": 1801000000,
+        "expires_at": 0,
+        "is_valid": true,
+        "issued_at": 1793000000,
+        "profile_id": "111",
+        "scopes": [
+            "pages_show_list",
+            "pages_manage_posts",
+            "pages_read_engagement",
+            "pages_read_user_engagement"
+        ],
+        "granular_scopes": [
+            {
+                "scope": "pages_manage_posts",
+                "target_ids": ["111"]
+            }
+        ],
+        "user_id": "10000000001"
+    }
+}
