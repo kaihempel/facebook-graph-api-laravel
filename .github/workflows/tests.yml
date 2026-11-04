@@ -92,7 +92,7 @@ jobs:
         run: php .github/scripts/coverage-check.php build/clover.xml 90 src/Graph src/Auth src/Exceptions
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: coverage-clover
           path: build/clover.xml
