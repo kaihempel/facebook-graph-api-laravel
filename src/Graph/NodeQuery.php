@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph;
+namespace KaiHempel\MetaGraph\Graph;
 
 use DateTimeInterface;
 use Illuminate\Support\LazyCollection;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Data\CursorPage;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Data\CursorPage;
 
 /**
  * Fluenter Zugriff auf Nodes und Edges: $graph->node('ID')->edge('feed')->fields([...])->get().

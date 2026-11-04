@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
 
 /*
  * Optionale Live-Tests gegen eine eigene Testseite mit Test-App.

@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Data\Comment;
-use Kuweh\MetaGraph\Data\MediaStatus;
-use Kuweh\MetaGraph\Data\PageConnection;
-use Kuweh\MetaGraph\Data\Post;
-use Kuweh\MetaGraph\Exceptions\ErrorMapper;
-use Kuweh\MetaGraph\Exceptions\PermissionException;
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\Exceptions\UserActionRequiredException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Data\Comment;
+use KaiHempel\MetaGraph\Data\MediaStatus;
+use KaiHempel\MetaGraph\Data\PageConnection;
+use KaiHempel\MetaGraph\Data\Post;
+use KaiHempel\MetaGraph\Exceptions\ErrorMapper;
+use KaiHempel\MetaGraph\Exceptions\PermissionException;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Exceptions\UserActionRequiredException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 /*
  * Regressionstests gegen aufgezeichnete, anonymisierte Antworten aus dem Graph API Explorer.

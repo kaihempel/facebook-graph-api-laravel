@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Jobs;
+namespace KaiHempel\MetaGraph\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
 
 /**
  * Liest die Page Tokens eines gespeicherten Long-lived User Tokens neu ein und speichert sie.

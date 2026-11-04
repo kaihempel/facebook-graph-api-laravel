@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Exceptions;
+namespace KaiHempel\MetaGraph\Exceptions;
 
 /**
  * Fehlende Berechtigung (Codes 3, 10, 200–299).

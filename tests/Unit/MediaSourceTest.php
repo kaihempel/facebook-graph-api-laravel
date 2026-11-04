@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Kuweh\MetaGraph\Media\MediaSource;
+use KaiHempel\MetaGraph\Media\MediaSource;
 
 it('describes url sources', function () {
     $source = MediaSource::url('https://cdn.example.com/path/video.mp4');

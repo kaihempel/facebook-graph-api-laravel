@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Data;
+namespace KaiHempel\MetaGraph\Data;
 
 use Carbon\CarbonImmutable;
-use Kuweh\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\AccessToken;
 
 final readonly class StoredToken
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Data\MediaState;
-use Kuweh\MetaGraph\Data\ReelUpload;
-use Kuweh\MetaGraph\Exceptions\TransientException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Media\MediaSource;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Data\MediaState;
+use KaiHempel\MetaGraph\Data\ReelUpload;
+use KaiHempel\MetaGraph\Exceptions\TransientException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Media\MediaSource;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 it('publishes reels in three phases', function () {
     $fake = MetaGraph::fake([

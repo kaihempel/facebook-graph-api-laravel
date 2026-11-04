@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth;
+namespace KaiHempel\MetaGraph\Auth;
 
 use Carbon\CarbonImmutable;
 use DateTimeInterface;
 use JsonSerializable;
-use Kuweh\MetaGraph\Support\Redactor;
+use KaiHempel\MetaGraph\Support\Redactor;
 
 final readonly class AccessToken implements JsonSerializable
 {

@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Sleep;
-use Kuweh\MetaGraph\Events\RateLimitApproaching;
-use Kuweh\MetaGraph\Events\RateLimitHit;
-use Kuweh\MetaGraph\Exceptions\GraphException;
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\Exceptions\TransientException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Http\RetryPolicy;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Events\RateLimitApproaching;
+use KaiHempel\MetaGraph\Events\RateLimitHit;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Exceptions\TransientException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Http\RetryPolicy;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 use Psr\Log\LoggerInterface;
 
 it('retries transient errors and 5xx up to the configured times', function () {

@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Auth\AppSecretProof;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\AppSecretProof;
 
 it('computes the hmac sha256 proof of the access token', function () {
     expect(AppSecretProof::make('token', 'secret'))->toBe(hash_hmac('sha256', 'token', 'secret'))

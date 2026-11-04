@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Reels;
+namespace KaiHempel\MetaGraph\Resources\Reels;
 
 use DateTimeInterface;
 use GuzzleHttp\Psr7\LimitStream;
 use GuzzleHttp\Psr7\Utils;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Data\MediaStatus;
-use Kuweh\MetaGraph\Data\ReelUpload;
-use Kuweh\MetaGraph\Data\Video;
-use Kuweh\MetaGraph\Events\MediaUploadProgressed;
-use Kuweh\MetaGraph\Exceptions\TransientException;
-use Kuweh\MetaGraph\Graph\GraphRequest;
-use Kuweh\MetaGraph\Resources\Resource;
-use Kuweh\MetaGraph\Support\Dispatch;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Data\MediaStatus;
+use KaiHempel\MetaGraph\Data\ReelUpload;
+use KaiHempel\MetaGraph\Data\Video;
+use KaiHempel\MetaGraph\Events\MediaUploadProgressed;
+use KaiHempel\MetaGraph\Exceptions\TransientException;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Resources\Resource;
+use KaiHempel\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Support\Values;
 
 /**
  * Reels einer Seite: start → Upload an rupload.facebook.com → finish.

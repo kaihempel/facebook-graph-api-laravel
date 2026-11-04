@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
-use Kuweh\MetaGraph\AppConfig;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Auth\TokenType;
-use Kuweh\MetaGraph\Exceptions\ConfigurationException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Support\Redactor;
+use KaiHempel\MetaGraph\AppConfig;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\TokenType;
+use KaiHempel\MetaGraph\Exceptions\ConfigurationException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Support\Redactor;
 
 it('creates typed tokens', function () {
     expect(AccessToken::user('u')->type)->toBe(TokenType::User)

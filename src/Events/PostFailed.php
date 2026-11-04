@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
-use Kuweh\MetaGraph\Resources\Posts\PostDraft;
+use KaiHempel\MetaGraph\Resources\Posts\PostDraft;
 use Throwable;
 
 /**

@@ -37,7 +37,7 @@ Weitere Apps (Multi-Tenant) werden unter `apps` ergänzt und mit `MetaGraph::app
 Jeder Aufruf läuft mit einem explizit benannten Token – es gibt keinen globalen Zustand.
 
 ```php
-use Kuweh\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
 
 MetaGraph::asPage($pageConnection);   // PageConnection (kennt Page-ID und Page Token)
 MetaGraph::asPage('PAGE_TOKEN');      // nur Token: Ressourcen nutzen /me (= die Seite)
@@ -73,7 +73,7 @@ Wer Laravel Socialite nutzt, übergibt dessen Token direkt an `toLongLived()`. `
 ## Low-Level-Client
 
 ```php
-use Kuweh\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Graph\FieldSet;
 
 $response = MetaGraph::asPage($page)
     ->node($page->id)
@@ -119,7 +119,7 @@ MetaGraph::asUser($t)->nodes(['id1', 'id2'])->get();
 ### Batch Requests
 
 ```php
-use Kuweh\MetaGraph\Graph\Batch\BatchRequest;
+use KaiHempel\MetaGraph\Graph\Batch\BatchRequest;
 
 $results = MetaGraph::asUser($token)->batch(function (BatchRequest $batch) use ($page, $upload, $otherPage) {
     $batch->post("{$page->id}/feed", ['message' => 'Test'])->name('create');
@@ -140,8 +140,8 @@ Mehr als 50 Operationen werden automatisch in Chunks geteilt; `batchStrict()` wi
 ## Ressourcen
 
 ```php
-use Kuweh\MetaGraph\Media\MediaSource;
-use Kuweh\MetaGraph\Resources\Posts\PostDraft;
+use KaiHempel\MetaGraph\Media\MediaSource;
+use KaiHempel\MetaGraph\Resources\Posts\PostDraft;
 
 $graph = MetaGraph::asPage($page);
 
@@ -190,7 +190,7 @@ $graph->comments()->delete($commentId);
 
 // Insights
 use Carbon\CarbonPeriod;
-use Kuweh\MetaGraph\Resources\Insights\PageMetric;
+use KaiHempel\MetaGraph\Resources\Insights\PageMetric;
 
 $graph->insights()->page([PageMetric::MediaView, PageMetric::Follows], CarbonPeriod::create('2026-10-01', '2026-10-31'));
 $graph->insights()->post($postId, ['post_media_view']);
@@ -231,7 +231,7 @@ Rate-Limit-Header werden nach jeder Antwort im Cache gehalten (`MetaGraph::rateL
 Die Route `GET|POST /meta-graph/webhook` (Pfad und Middleware konfigurierbar, ohne CSRF) beantwortet den Verifizierungs-Handshake, prüft `X-Hub-Signature-256` auf dem rohen Body und verarbeitet die Zustellung als Job `ProcessWebhookPayload`. Für weitere Apps: `/meta-graph/webhook/{app}`.
 
 ```php
-use Kuweh\MetaGraph\Events\PageCommentReceived;
+use KaiHempel\MetaGraph\Events\PageCommentReceived;
 
 Event::listen(function (PageCommentReceived $event) {
     $event->change->objectId;      // Page-ID
@@ -271,8 +271,8 @@ Schedule::command('meta-graph:version:check')->weekly();
 ## Testen mit GraphFake
 
 ```php
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 $fake = MetaGraph::fake([
     'v26.0/*/feed' => GraphFake::response(['id' => '123_456']),

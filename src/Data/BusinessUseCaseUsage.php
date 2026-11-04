@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Data;
+namespace KaiHempel\MetaGraph\Data;
 
 /**
  * Ein Eintrag aus X-Business-Use-Case-Usage (pro Business-Objekt und Typ).

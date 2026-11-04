@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph;
+namespace KaiHempel\MetaGraph\Graph;
 
 use Illuminate\Support\LazyCollection;
-use Kuweh\MetaGraph\Data\CursorPage;
+use KaiHempel\MetaGraph\Data\CursorPage;
 
 /**
  * Folgt paging.next einer Edge. Ein konfigurierbares max_pages schützt vor Endlosschleifen.

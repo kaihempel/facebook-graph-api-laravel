@@ -4,21 +4,21 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Auth\AppSecretProof;
-use Kuweh\MetaGraph\Events\TokenInvalidated;
-use Kuweh\MetaGraph\Events\UserActionRequired;
-use Kuweh\MetaGraph\Exceptions\AuthenticationException;
-use Kuweh\MetaGraph\Exceptions\DuplicatePostException;
-use Kuweh\MetaGraph\Exceptions\GraphException;
-use Kuweh\MetaGraph\Exceptions\UserActionRequiredException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Graph\FieldSet;
-use Kuweh\MetaGraph\Graph\GraphClient;
-use Kuweh\MetaGraph\Graph\GraphRequest;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Testing\GraphFake;
-use Kuweh\MetaGraph\Tests\TestCase;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\AppSecretProof;
+use KaiHempel\MetaGraph\Events\TokenInvalidated;
+use KaiHempel\MetaGraph\Events\UserActionRequired;
+use KaiHempel\MetaGraph\Exceptions\AuthenticationException;
+use KaiHempel\MetaGraph\Exceptions\DuplicatePostException;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\Exceptions\UserActionRequiredException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Tests\TestCase;
 
 it('reads a node with fields, version, token and appsecret_proof', function () {
     $fake = MetaGraph::fake([

@@ -5,17 +5,17 @@ declare(strict_types=1);
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Auth\ArrayTokenRepository;
-use Kuweh\MetaGraph\Auth\EloquentTokenRepository;
-use Kuweh\MetaGraph\Contracts\TokenRepository;
-use Kuweh\MetaGraph\Data\UploadSession;
-use Kuweh\MetaGraph\Events\PageConnected;
-use Kuweh\MetaGraph\Events\PageDisconnected;
-use Kuweh\MetaGraph\Exceptions\ConfigurationException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Uploads\ArrayUploadSessionStore;
-use Kuweh\MetaGraph\Uploads\EloquentUploadSessionStore;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\ArrayTokenRepository;
+use KaiHempel\MetaGraph\Auth\EloquentTokenRepository;
+use KaiHempel\MetaGraph\Contracts\TokenRepository;
+use KaiHempel\MetaGraph\Data\UploadSession;
+use KaiHempel\MetaGraph\Events\PageConnected;
+use KaiHempel\MetaGraph\Events\PageDisconnected;
+use KaiHempel\MetaGraph\Exceptions\ConfigurationException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Uploads\ArrayUploadSessionStore;
+use KaiHempel\MetaGraph\Uploads\EloquentUploadSessionStore;
 
 it('stores tokens encrypted with eloquent', function (string $repository) {
     /** @var TokenRepository $tokens */

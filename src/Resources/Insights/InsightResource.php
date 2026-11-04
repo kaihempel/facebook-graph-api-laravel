@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Insights;
+namespace KaiHempel\MetaGraph\Resources\Insights;
 
 use BackedEnum;
 use Carbon\CarbonPeriod;
 use Illuminate\Support\Collection;
-use Kuweh\MetaGraph\Data\InsightMetric;
-use Kuweh\MetaGraph\Graph\NodeQuery;
-use Kuweh\MetaGraph\Resources\Resource;
+use KaiHempel\MetaGraph\Data\InsightMetric;
+use KaiHempel\MetaGraph\Graph\NodeQuery;
+use KaiHempel\MetaGraph\Resources\Resource;
 
 /**
  * Basis-Insights für Seiten (/{page-id}/insights) und Posts (/{post-id}/insights).

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Support;
+namespace KaiHempel\MetaGraph\Support;
 
 /**
  * Laufzeitoptionen für Client und Ressourcen (aus config/meta-graph.php).

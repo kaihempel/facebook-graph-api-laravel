@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
-use Kuweh\MetaGraph\Data\MediaStatus;
+use KaiHempel\MetaGraph\Data\MediaStatus;
 
 /**
  * Ein Video oder Reel ist fertig verarbeitet (oder fehlgeschlagen).

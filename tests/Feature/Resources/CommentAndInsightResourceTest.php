@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 use Carbon\CarbonPeriod;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Resources\Insights\InsightPeriod;
-use Kuweh\MetaGraph\Resources\Insights\PageMetric;
-use Kuweh\MetaGraph\Resources\Insights\PostMetric;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Resources\Insights\InsightPeriod;
+use KaiHempel\MetaGraph\Resources\Insights\PageMetric;
+use KaiHempel\MetaGraph\Resources\Insights\PostMetric;
 
 it('lists, replies, hides and deletes comments', function () {
     $fake = MetaGraph::fake([

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Data;
+namespace KaiHempel\MetaGraph\Data;
 
-use Kuweh\MetaGraph\Exceptions\MediaProcessingException;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Exceptions\MediaProcessingException;
+use KaiHempel\MetaGraph\Support\Values;
 
 /**
  * Status eines Videos oder Reels (Feld "status" mit uploading_phase,

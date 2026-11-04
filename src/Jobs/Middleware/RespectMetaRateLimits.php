@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Jobs\Middleware;
+namespace KaiHempel\MetaGraph\Jobs\Middleware;
 
 use Closure;
 use Illuminate\Container\Container;
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\GraphManager;
 
 /**
  * Stellt Jobs zurück, solange die App gesperrt ist bzw. ein Rate-Limit-Fehler auftritt.

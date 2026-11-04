@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Exceptions;
+namespace KaiHempel\MetaGraph\Exceptions;
 
-use Kuweh\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
 use RuntimeException;
 use Throwable;
 

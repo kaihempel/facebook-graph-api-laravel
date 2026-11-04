@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Media;
+namespace KaiHempel\MetaGraph\Media;
 
 use Illuminate\Http\UploadedFile;
-use Kuweh\MetaGraph\Contracts\MediaSource as MediaSourceContract;
+use KaiHempel\MetaGraph\Contracts\MediaSource as MediaSourceContract;
 
 /**
  * Fabrik für Medienquellen: URL, lokale Datei, Laravel-Disk oder Upload.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Tests\TestCase;
+use KaiHempel\MetaGraph\Tests\TestCase;
 
 uses(TestCase::class)->in('Unit', 'Feature', 'Contract', 'Live');
 

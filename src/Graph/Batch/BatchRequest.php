@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph\Batch;
+namespace KaiHempel\MetaGraph\Graph\Batch;
 
 use Countable;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Auth\AppSecretProof;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Graph\ParameterSerializer;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\AppSecretProof;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Graph\ParameterSerializer;
 
 /**
  * Sammelt Operationen für einen Batch Request.

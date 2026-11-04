@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Media;
+namespace KaiHempel\MetaGraph\Media;
 
 use RuntimeException;
 

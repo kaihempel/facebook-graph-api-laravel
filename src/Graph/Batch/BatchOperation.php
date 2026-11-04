@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph\Batch;
+namespace KaiHempel\MetaGraph\Graph\Batch;
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Graph\FieldSet;
 
 /**
  * Eine Operation innerhalb eines Batch Requests (fluent konfigurierbar).

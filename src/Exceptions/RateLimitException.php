@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Exceptions;
+namespace KaiHempel\MetaGraph\Exceptions;
 
-use Kuweh\MetaGraph\Data\RateLimitUsage;
-use Kuweh\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Data\RateLimitUsage;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
 use Throwable;
 
 /**

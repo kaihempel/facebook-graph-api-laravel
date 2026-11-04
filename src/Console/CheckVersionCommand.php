@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Console;
+namespace KaiHempel\MetaGraph\Console;
 
 use Carbon\CarbonImmutable;
 use Illuminate\Console\Command;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Support\GraphVersions;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Support\GraphVersions;
 
 /**
  * Vergleicht die konfigurierte Version mit dem Ablaufdatum und warnt rechtzeitig.

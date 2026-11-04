@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Testing;
+namespace KaiHempel\MetaGraph\Testing;
 
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Str;

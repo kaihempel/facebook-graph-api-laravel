@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Uploads;
+namespace KaiHempel\MetaGraph\Uploads;
 
-use Kuweh\MetaGraph\Contracts\UploadSessionStore;
-use Kuweh\MetaGraph\Data\UploadSession;
+use KaiHempel\MetaGraph\Contracts\UploadSessionStore;
+use KaiHempel\MetaGraph\Data\UploadSession;
 
 final class ArrayUploadSessionStore implements UploadSessionStore
 {

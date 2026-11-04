@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Webhooks;
+namespace KaiHempel\MetaGraph\Webhooks;
 
 /**
  * Prüft X-Hub-Signature-256: HMAC-SHA256 über den unveränderten Request-Body

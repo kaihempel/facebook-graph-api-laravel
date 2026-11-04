@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 it('lists connected pages with page tokens and tasks', function () {
     $fake = MetaGraph::fake([

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Exceptions;
+namespace KaiHempel\MetaGraph\Exceptions;
 
 /**
  * Der Nutzer muss sich bei Facebook einloggen (Subcodes 459, 464 Checkpoint/unbestätigt, 460 Passwort geändert).

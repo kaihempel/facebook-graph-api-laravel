@@ -3,16 +3,16 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Event;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\UploadSessionStore;
-use Kuweh\MetaGraph\Data\MediaState;
-use Kuweh\MetaGraph\Data\UploadSession;
-use Kuweh\MetaGraph\Events\MediaUploadProgressed;
-use Kuweh\MetaGraph\Exceptions\MediaProcessingException;
-use Kuweh\MetaGraph\Exceptions\TransientException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Media\MediaSource;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\UploadSessionStore;
+use KaiHempel\MetaGraph\Data\MediaState;
+use KaiHempel\MetaGraph\Data\UploadSession;
+use KaiHempel\MetaGraph\Events\MediaUploadProgressed;
+use KaiHempel\MetaGraph\Exceptions\MediaProcessingException;
+use KaiHempel\MetaGraph\Exceptions\TransientException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Media\MediaSource;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 function videoFile(string $contents = 'video-bytes-0123456789'): string
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Jobs\Concerns;
+namespace KaiHempel\MetaGraph\Jobs\Concerns;
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Graph\GraphClient;
-use Kuweh\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\GraphManager;
 
 /**
  * @property-read string|null $app

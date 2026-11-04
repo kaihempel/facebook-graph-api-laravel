@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
-use Kuweh\MetaGraph\Data\PageConnection;
+use KaiHempel\MetaGraph\Data\PageConnection;
 
 /**
  * Eine Seite wurde verbunden und ihr Page Token gespeichert.

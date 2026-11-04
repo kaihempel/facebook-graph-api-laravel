@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Uploads;
+namespace KaiHempel\MetaGraph\Uploads;
 
-use Kuweh\MetaGraph\Contracts\UploadSessionStore;
-use Kuweh\MetaGraph\Data\UploadSession;
-use Kuweh\MetaGraph\Models\MetaGraphUpload;
+use KaiHempel\MetaGraph\Contracts\UploadSessionStore;
+use KaiHempel\MetaGraph\Data\UploadSession;
+use KaiHempel\MetaGraph\Models\MetaGraphUpload;
 
 /**
  * Persistiert Resumable-Upload-Sessions in der Tabelle meta_graph_uploads.

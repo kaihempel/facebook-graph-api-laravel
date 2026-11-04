@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Exceptions;
+namespace KaiHempel\MetaGraph\Exceptions;
 
-use Kuweh\MetaGraph\Data\RateLimitUsage;
-use Kuweh\MetaGraph\Graph\GraphRequest;
-use Kuweh\MetaGraph\Graph\GraphResponse;
+use KaiHempel\MetaGraph\Data\RateLimitUsage;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Graph\GraphResponse;
 
 /**
  * Übersetzt einen Graph-Fehler anhand von code und error_subcode in genau eine Exception.

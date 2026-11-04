@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Console;
+namespace KaiHempel\MetaGraph\Console;
 
 use Carbon\CarbonImmutable;
 use Illuminate\Console\Command;
-use Kuweh\MetaGraph\Auth\TokenType;
-use Kuweh\MetaGraph\Contracts\ListsTokens;
-use Kuweh\MetaGraph\Events\TokenExpiringSoon;
-use Kuweh\MetaGraph\Events\TokenInvalidated;
-use Kuweh\MetaGraph\Exceptions\GraphException;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Auth\TokenType;
+use KaiHempel\MetaGraph\Contracts\ListsTokens;
+use KaiHempel\MetaGraph\Events\TokenExpiringSoon;
+use KaiHempel\MetaGraph\Events\TokenInvalidated;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Support\Dispatch;
 
 /**
  * Prüft gespeicherte Tokens (für den Scheduler, täglich).

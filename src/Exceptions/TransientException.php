@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Exceptions;
+namespace KaiHempel\MetaGraph\Exceptions;
 
 /**
  * Temporäre Fehler (Codes 1, 2, Verbindungsfehler, HTTP 5xx). Werden automatisch mit Backoff wiederholt.
