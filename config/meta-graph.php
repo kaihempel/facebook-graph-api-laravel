@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Auth\EloquentTokenRepository;
-use Kuweh\MetaGraph\Uploads\EloquentUploadSessionStore;
+use KaiHempel\MetaGraph\Auth\EloquentTokenRepository;
+use KaiHempel\MetaGraph\Uploads\EloquentUploadSessionStore;
 
 return [
 

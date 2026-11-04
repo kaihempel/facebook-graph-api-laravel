@@ -2,29 +2,29 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph;
+namespace KaiHempel\MetaGraph;
 
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Log\LogManager;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Auth\OAuth\LoginFlow;
-use Kuweh\MetaGraph\Auth\TokenDebugger;
-use Kuweh\MetaGraph\Auth\TokenExchanger;
-use Kuweh\MetaGraph\Contracts\TokenRepository;
-use Kuweh\MetaGraph\Data\PageConnection;
-use Kuweh\MetaGraph\Events\PageConnected;
-use Kuweh\MetaGraph\Events\PageDisconnected;
-use Kuweh\MetaGraph\Exceptions\ConfigurationException;
-use Kuweh\MetaGraph\Graph\GraphClient;
-use Kuweh\MetaGraph\Http\RateLimitTracker;
-use Kuweh\MetaGraph\Http\RetryPolicy;
-use Kuweh\MetaGraph\Http\Transport;
-use Kuweh\MetaGraph\Support\ClientOptions;
-use Kuweh\MetaGraph\Support\Dispatch;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\OAuth\LoginFlow;
+use KaiHempel\MetaGraph\Auth\TokenDebugger;
+use KaiHempel\MetaGraph\Auth\TokenExchanger;
+use KaiHempel\MetaGraph\Contracts\TokenRepository;
+use KaiHempel\MetaGraph\Data\PageConnection;
+use KaiHempel\MetaGraph\Events\PageConnected;
+use KaiHempel\MetaGraph\Events\PageDisconnected;
+use KaiHempel\MetaGraph\Exceptions\ConfigurationException;
+use KaiHempel\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Http\RateLimitTracker;
+use KaiHempel\MetaGraph\Http\RetryPolicy;
+use KaiHempel\MetaGraph\Http\Transport;
+use KaiHempel\MetaGraph\Support\ClientOptions;
+use KaiHempel\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 use Psr\Log\LoggerInterface;
 
 /**

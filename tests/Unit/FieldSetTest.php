@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Graph\FieldSet;
 
 it('serializes simple fields', function () {
     expect(FieldSet::make('id', 'name', 'fan_count')->toString())->toBe('id,name,fan_count');

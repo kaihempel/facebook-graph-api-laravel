@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Data\RateLimitUsage;
+use KaiHempel\MetaGraph\Data\RateLimitUsage;
 
 it('parses X-App-Usage', function () {
     $usage = RateLimitUsage::fromHeaders([

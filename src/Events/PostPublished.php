@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
-use Kuweh\MetaGraph\Data\Post;
+use KaiHempel\MetaGraph\Data\Post;
 
 /**
  * Ein Post wurde veröffentlicht.

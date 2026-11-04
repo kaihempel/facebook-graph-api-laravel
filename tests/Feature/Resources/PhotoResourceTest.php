@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Illuminate\Http\UploadedFile;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Media\MediaSource;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Media\MediaSource;
 
 it('publishes photos by url without downloading them', function () {
     $fake = MetaGraph::fake(['v26.0/111/photos' => ['id' => 'ph1', 'post_id' => '111_9']]);

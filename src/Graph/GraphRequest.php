@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph;
+namespace KaiHempel\MetaGraph\Graph;
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Support\Redactor;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Support\Redactor;
 use Psr\Http\Message\StreamInterface;
 
 /**

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Graph\GraphRequest;
-use Kuweh\MetaGraph\Graph\Paginator;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Graph\Paginator;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 it('returns a cursor page', function () {
     MetaGraph::fake([

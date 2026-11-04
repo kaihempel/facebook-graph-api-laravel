@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth;
+namespace KaiHempel\MetaGraph\Auth;
 
 /**
  * appsecret_proof = HMAC-SHA256(access_token, app_secret).

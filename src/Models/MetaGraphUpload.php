@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Models;
+namespace KaiHempel\MetaGraph\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

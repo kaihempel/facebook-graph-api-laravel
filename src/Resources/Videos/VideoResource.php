@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Videos;
+namespace KaiHempel\MetaGraph\Resources\Videos;
 
 use DateTimeInterface;
 use GuzzleHttp\Psr7\LimitStream;
 use GuzzleHttp\Psr7\Utils;
 use InvalidArgumentException;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Contracts\UploadSessionStore;
-use Kuweh\MetaGraph\Data\MediaStatus;
-use Kuweh\MetaGraph\Data\UploadSession;
-use Kuweh\MetaGraph\Data\Video;
-use Kuweh\MetaGraph\Events\MediaUploadProgressed;
-use Kuweh\MetaGraph\Exceptions\TransientException;
-use Kuweh\MetaGraph\Graph\GraphClient;
-use Kuweh\MetaGraph\Graph\GraphRequest;
-use Kuweh\MetaGraph\Media\StringSource;
-use Kuweh\MetaGraph\Resources\Resource;
-use Kuweh\MetaGraph\Support\Dispatch;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Contracts\UploadSessionStore;
+use KaiHempel\MetaGraph\Data\MediaStatus;
+use KaiHempel\MetaGraph\Data\UploadSession;
+use KaiHempel\MetaGraph\Data\Video;
+use KaiHempel\MetaGraph\Events\MediaUploadProgressed;
+use KaiHempel\MetaGraph\Exceptions\TransientException;
+use KaiHempel\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Media\StringSource;
+use KaiHempel\MetaGraph\Resources\Resource;
+use KaiHempel\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Support\Values;
 
 /**
  * Videos einer Seite.

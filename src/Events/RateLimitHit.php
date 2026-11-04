@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
 
 /**
  * Meta hat einen Rate-Limit-Fehler geliefert.

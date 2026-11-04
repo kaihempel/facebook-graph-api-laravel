@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Insights;
+namespace KaiHempel\MetaGraph\Resources\Insights;
 
 /**
  * Gängige Page-Metriken. Nicht aufgeführte Metriken können als String übergeben werden.

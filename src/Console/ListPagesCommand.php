@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Console;
+namespace KaiHempel\MetaGraph\Console;
 
 use Illuminate\Console\Command;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Exceptions\GraphException;
-use Kuweh\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\GraphManager;
 
 final class ListPagesCommand extends Command
 {

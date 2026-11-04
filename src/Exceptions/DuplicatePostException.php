@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Exceptions;
+namespace KaiHempel\MetaGraph\Exceptions;
 
 /**
  * Doppelter Inhalt (Code 506). Inhalt ändern, kein Retry.

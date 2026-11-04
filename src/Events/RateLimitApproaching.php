@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
-use Kuweh\MetaGraph\Data\RateLimitUsage;
+use KaiHempel\MetaGraph\Data\RateLimitUsage;
 
 /**
  * Die Auslastung hat den konfigurierten Schwellwert erreicht.

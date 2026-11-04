@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Comments;
+namespace KaiHempel\MetaGraph\Resources\Comments;
 
 use Illuminate\Support\LazyCollection;
-use Kuweh\MetaGraph\Data\Comment;
-use Kuweh\MetaGraph\Graph\FieldSet;
-use Kuweh\MetaGraph\Resources\Resource;
+use KaiHempel\MetaGraph\Data\Comment;
+use KaiHempel\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Resources\Resource;
 
 /**
  * Kommentare (/{object-id}/comments, /{comment-id}). Benötigt Engagement-Berechtigungen.

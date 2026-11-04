@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Posts;
+namespace KaiHempel\MetaGraph\Resources\Posts;
 
-use Kuweh\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
 
 /**
  * Unveränderlicher, serialisierbarer Entwurf eines Feed-Posts (queue-tauglich).

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph\Batch;
+namespace KaiHempel\MetaGraph\Graph\Batch;
 
 use ArrayIterator;
 use Countable;
 use IteratorAggregate;
-use Kuweh\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Graph\GraphClient;
 use Traversable;
 
 /**

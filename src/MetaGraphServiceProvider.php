@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph;
+namespace KaiHempel\MetaGraph;
 
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Foundation\Application;
-use Kuweh\MetaGraph\Auth\EloquentTokenRepository;
-use Kuweh\MetaGraph\Console\CheckTokensCommand;
-use Kuweh\MetaGraph\Console\CheckVersionCommand;
-use Kuweh\MetaGraph\Console\DebugTokenCommand;
-use Kuweh\MetaGraph\Console\ListPagesCommand;
-use Kuweh\MetaGraph\Console\SubscribeWebhooksCommand;
-use Kuweh\MetaGraph\Contracts\TokenRepository;
-use Kuweh\MetaGraph\Contracts\UploadSessionStore;
-use Kuweh\MetaGraph\Graph\GraphClient;
-use Kuweh\MetaGraph\Http\RateLimitTracker;
-use Kuweh\MetaGraph\Uploads\EloquentUploadSessionStore;
+use KaiHempel\MetaGraph\Auth\EloquentTokenRepository;
+use KaiHempel\MetaGraph\Console\CheckTokensCommand;
+use KaiHempel\MetaGraph\Console\CheckVersionCommand;
+use KaiHempel\MetaGraph\Console\DebugTokenCommand;
+use KaiHempel\MetaGraph\Console\ListPagesCommand;
+use KaiHempel\MetaGraph\Console\SubscribeWebhooksCommand;
+use KaiHempel\MetaGraph\Contracts\TokenRepository;
+use KaiHempel\MetaGraph\Contracts\UploadSessionStore;
+use KaiHempel\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Http\RateLimitTracker;
+use KaiHempel\MetaGraph\Uploads\EloquentUploadSessionStore;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

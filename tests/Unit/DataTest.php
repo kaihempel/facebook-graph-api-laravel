@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Data\CursorPage;
-use Kuweh\MetaGraph\Data\InsightValue;
-use Kuweh\MetaGraph\Data\MediaState;
-use Kuweh\MetaGraph\Data\MediaStatus;
-use Kuweh\MetaGraph\Data\Post;
-use Kuweh\MetaGraph\Data\Video;
-use Kuweh\MetaGraph\Graph\GraphResponse;
-use Kuweh\MetaGraph\Resources\Posts\PostDraft;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Data\CursorPage;
+use KaiHempel\MetaGraph\Data\InsightValue;
+use KaiHempel\MetaGraph\Data\MediaState;
+use KaiHempel\MetaGraph\Data\MediaStatus;
+use KaiHempel\MetaGraph\Data\Post;
+use KaiHempel\MetaGraph\Data\Video;
+use KaiHempel\MetaGraph\Graph\GraphResponse;
+use KaiHempel\MetaGraph\Resources\Posts\PostDraft;
+use KaiHempel\MetaGraph\Support\Values;
 
 it('keeps raw data on dtos', function () {
     $post = Post::fromArray(['id' => '1', 'message' => 'x', 'custom' => ['a' => 1]]);

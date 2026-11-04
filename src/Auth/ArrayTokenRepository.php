@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth;
+namespace KaiHempel\MetaGraph\Auth;
 
 use Carbon\CarbonImmutable;
-use Kuweh\MetaGraph\Contracts\ListsTokens;
-use Kuweh\MetaGraph\Contracts\TokenRepository;
-use Kuweh\MetaGraph\Data\StoredToken;
+use KaiHempel\MetaGraph\Contracts\ListsTokens;
+use KaiHempel\MetaGraph\Contracts\TokenRepository;
+use KaiHempel\MetaGraph\Data\StoredToken;
 
 /**
  * Flüchtige Implementierung, z. B. für Tests oder Setups ohne Datenbank.

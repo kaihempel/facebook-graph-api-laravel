@@ -2,28 +2,28 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Http;
+namespace KaiHempel\MetaGraph\Http;
 
 use Illuminate\Container\Container;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory as HttpFactory;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;
-use Kuweh\MetaGraph\AppConfig;
-use Kuweh\MetaGraph\Auth\AppSecretProof;
-use Kuweh\MetaGraph\Events\TokenInvalidated;
-use Kuweh\MetaGraph\Events\UserActionRequired;
-use Kuweh\MetaGraph\Exceptions\AuthenticationException;
-use Kuweh\MetaGraph\Exceptions\ErrorMapper;
-use Kuweh\MetaGraph\Exceptions\GraphException;
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\Exceptions\TransientException;
-use Kuweh\MetaGraph\Exceptions\UserActionRequiredException;
-use Kuweh\MetaGraph\Graph\GraphRequest;
-use Kuweh\MetaGraph\Graph\GraphResponse;
-use Kuweh\MetaGraph\Graph\ParameterSerializer;
-use Kuweh\MetaGraph\Support\Dispatch;
-use Kuweh\MetaGraph\Support\Redactor;
+use KaiHempel\MetaGraph\AppConfig;
+use KaiHempel\MetaGraph\Auth\AppSecretProof;
+use KaiHempel\MetaGraph\Events\TokenInvalidated;
+use KaiHempel\MetaGraph\Events\UserActionRequired;
+use KaiHempel\MetaGraph\Exceptions\AuthenticationException;
+use KaiHempel\MetaGraph\Exceptions\ErrorMapper;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Exceptions\TransientException;
+use KaiHempel\MetaGraph\Exceptions\UserActionRequiredException;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Graph\GraphResponse;
+use KaiHempel\MetaGraph\Graph\ParameterSerializer;
+use KaiHempel\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Support\Redactor;
 use Psr\Log\LoggerInterface;
 
 /**

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Contracts;
+namespace KaiHempel\MetaGraph\Contracts;
 
-use Kuweh\MetaGraph\Data\UploadSession;
+use KaiHempel\MetaGraph\Data\UploadSession;
 
 /**
  * Persistiert Upload-Sessions, damit ein Queue-Job nach einem Neustart fortsetzen kann.

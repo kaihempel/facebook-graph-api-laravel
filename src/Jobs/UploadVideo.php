@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Jobs;
+namespace KaiHempel\MetaGraph\Jobs;
 
 use DateTimeInterface;
 use Illuminate\Bus\Queueable;
@@ -12,12 +12,12 @@ use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Jobs\Concerns\ResolvesClient;
-use Kuweh\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
-use Kuweh\MetaGraph\Resources\Videos\VideoResource;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Jobs\Concerns\ResolvesClient;
+use KaiHempel\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
+use KaiHempel\MetaGraph\Resources\Videos\VideoResource;
 
 /**
  * Lädt ein Video per Resumable Upload hoch (fortsetzbar über die persistierte Session)

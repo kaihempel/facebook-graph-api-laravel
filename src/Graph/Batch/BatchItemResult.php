@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph\Batch;
+namespace KaiHempel\MetaGraph\Graph\Batch;
 
 use Illuminate\Support\Arr;
-use Kuweh\MetaGraph\Exceptions\ErrorMapper;
-use Kuweh\MetaGraph\Exceptions\GraphException;
-use Kuweh\MetaGraph\Graph\GraphResponse;
+use KaiHempel\MetaGraph\Exceptions\ErrorMapper;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\Graph\GraphResponse;
 
 /**
  * Ergebnis einer einzelnen Batch-Operation. Der body-String wird dekodiert.

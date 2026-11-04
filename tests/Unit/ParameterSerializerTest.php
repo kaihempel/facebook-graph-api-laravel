@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
-use Kuweh\MetaGraph\Auth\TokenType;
-use Kuweh\MetaGraph\Graph\FieldSet;
-use Kuweh\MetaGraph\Graph\ParameterSerializer;
+use KaiHempel\MetaGraph\Auth\TokenType;
+use KaiHempel\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Graph\ParameterSerializer;
 
 it('serializes graph parameters', function () {
     $date = CarbonImmutable::parse('2026-11-02 09:00:00', 'UTC');

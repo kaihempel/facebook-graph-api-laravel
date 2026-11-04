@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Webhooks\SignatureVerifier;
+use KaiHempel\MetaGraph\Webhooks\SignatureVerifier;
 
 it('verifies the sha256 signature on the raw body', function () {
     $body = '{"object":"page","entry":[]}';

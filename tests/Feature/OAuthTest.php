@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
 use Illuminate\Http\Request;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Auth\TokenType;
-use Kuweh\MetaGraph\Exceptions\ConfigurationException;
-use Kuweh\MetaGraph\Exceptions\InvalidStateException;
-use Kuweh\MetaGraph\Exceptions\LoginFailedException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\TokenType;
+use KaiHempel\MetaGraph\Exceptions\ConfigurationException;
+use KaiHempel\MetaGraph\Exceptions\InvalidStateException;
+use KaiHempel\MetaGraph\Exceptions\LoginFailedException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 beforeEach(fn () => CarbonImmutable::setTestNow('2026-10-31 12:00:00'));
 afterEach(fn () => CarbonImmutable::setTestNow());

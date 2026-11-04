@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Pages;
+namespace KaiHempel\MetaGraph\Resources\Pages;
 
 use Illuminate\Support\Collection;
-use Kuweh\MetaGraph\Data\Page;
-use Kuweh\MetaGraph\Data\PageConnection;
-use Kuweh\MetaGraph\Graph\FieldSet;
-use Kuweh\MetaGraph\Graph\GraphClient;
-use Kuweh\MetaGraph\Resources\Resource;
+use KaiHempel\MetaGraph\Data\Page;
+use KaiHempel\MetaGraph\Data\PageConnection;
+use KaiHempel\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Resources\Resource;
 
 final class PageResource extends Resource
 {

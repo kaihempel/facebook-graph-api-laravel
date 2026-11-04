@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph;
+namespace KaiHempel\MetaGraph\Graph;
 
 use Illuminate\Support\Arr;
-use Kuweh\MetaGraph\Data\RateLimitUsage;
+use KaiHempel\MetaGraph\Data\RateLimitUsage;
 
 final readonly class GraphResponse
 {

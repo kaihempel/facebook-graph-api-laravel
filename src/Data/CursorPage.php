@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Data;
+namespace KaiHempel\MetaGraph\Data;
 
 use ArrayIterator;
 use Countable;

@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph;
+namespace KaiHempel\MetaGraph\Graph;
 
 use Closure;
 use Illuminate\Container\Container;
-use Kuweh\MetaGraph\AppConfig;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\UploadSessionStore;
-use Kuweh\MetaGraph\Exceptions\BatchTooLargeException;
-use Kuweh\MetaGraph\Graph\Batch\BatchItemResult;
-use Kuweh\MetaGraph\Graph\Batch\BatchRequest;
-use Kuweh\MetaGraph\Graph\Batch\BatchResponse;
-use Kuweh\MetaGraph\Http\Transport;
-use Kuweh\MetaGraph\Resources\Comments\CommentResource;
-use Kuweh\MetaGraph\Resources\Insights\InsightResource;
-use Kuweh\MetaGraph\Resources\Pages\PageResource;
-use Kuweh\MetaGraph\Resources\Photos\PhotoResource;
-use Kuweh\MetaGraph\Resources\Posts\PostResource;
-use Kuweh\MetaGraph\Resources\Reels\ReelResource;
-use Kuweh\MetaGraph\Resources\Videos\VideoResource;
-use Kuweh\MetaGraph\Support\ClientOptions;
-use Kuweh\MetaGraph\Uploads\ArrayUploadSessionStore;
+use KaiHempel\MetaGraph\AppConfig;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\UploadSessionStore;
+use KaiHempel\MetaGraph\Exceptions\BatchTooLargeException;
+use KaiHempel\MetaGraph\Graph\Batch\BatchItemResult;
+use KaiHempel\MetaGraph\Graph\Batch\BatchRequest;
+use KaiHempel\MetaGraph\Graph\Batch\BatchResponse;
+use KaiHempel\MetaGraph\Http\Transport;
+use KaiHempel\MetaGraph\Resources\Comments\CommentResource;
+use KaiHempel\MetaGraph\Resources\Insights\InsightResource;
+use KaiHempel\MetaGraph\Resources\Pages\PageResource;
+use KaiHempel\MetaGraph\Resources\Photos\PhotoResource;
+use KaiHempel\MetaGraph\Resources\Posts\PostResource;
+use KaiHempel\MetaGraph\Resources\Reels\ReelResource;
+use KaiHempel\MetaGraph\Resources\Videos\VideoResource;
+use KaiHempel\MetaGraph\Support\ClientOptions;
+use KaiHempel\MetaGraph\Uploads\ArrayUploadSessionStore;
 
 /**
  * Generischer Low-Level-Client: erreicht jeden Graph-Endpunkt und kapselt

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Exceptions\UserActionRequiredException;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Exceptions\UserActionRequiredException;
 
 /**
  * Der Nutzer muss sich bei Facebook einloggen (Checkpoint, Passwortwechsel).

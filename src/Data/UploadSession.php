@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Data;
+namespace KaiHempel\MetaGraph\Data;
 
 /**
  * Session der Resumable Upload API (POST /{app-id}/uploads).

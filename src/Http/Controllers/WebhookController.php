@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Http\Controllers;
+namespace KaiHempel\MetaGraph\Http\Controllers;
 
 use Illuminate\Contracts\Bus\Dispatcher as BusDispatcher;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Kuweh\MetaGraph\Exceptions\ConfigurationException;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Jobs\ProcessWebhookPayload;
-use Kuweh\MetaGraph\Webhooks\SignatureVerifier;
+use KaiHempel\MetaGraph\Exceptions\ConfigurationException;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Jobs\ProcessWebhookPayload;
+use KaiHempel\MetaGraph\Webhooks\SignatureVerifier;
 
 final class WebhookController
 {

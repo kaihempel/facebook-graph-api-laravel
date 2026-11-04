@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Photos;
+namespace KaiHempel\MetaGraph\Resources\Photos;
 
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Data\Photo;
-use Kuweh\MetaGraph\Resources\Resource;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Data\Photo;
+use KaiHempel\MetaGraph\Resources\Resource;
 
 /**
  * Fotos einer Seite (/{page-id}/photos), per URL oder Datei.

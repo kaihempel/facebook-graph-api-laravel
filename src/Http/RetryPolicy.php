@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Http;
+namespace KaiHempel\MetaGraph\Http;
 
 use Illuminate\Support\Sleep;
-use Kuweh\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
 
 /**
  * Exponentieller Backoff mit Jitter (Standard: 1 s, 4 s, 16 s) für

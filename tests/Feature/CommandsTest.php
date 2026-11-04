@@ -5,12 +5,12 @@ declare(strict_types=1);
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\TokenRepository;
-use Kuweh\MetaGraph\Events\TokenExpiringSoon;
-use Kuweh\MetaGraph\Events\TokenInvalidated;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\TokenRepository;
+use KaiHempel\MetaGraph\Events\TokenExpiringSoon;
+use KaiHempel\MetaGraph\Events\TokenInvalidated;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 beforeEach(fn () => CarbonImmutable::setTestNow('2026-10-31 12:00:00'));
 afterEach(fn () => CarbonImmutable::setTestNow());

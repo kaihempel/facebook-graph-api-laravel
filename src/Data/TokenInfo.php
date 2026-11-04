@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Data;
+namespace KaiHempel\MetaGraph\Data;
 
 use Carbon\CarbonImmutable;
-use Kuweh\MetaGraph\Auth\TokenType;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Auth\TokenType;
+use KaiHempel\MetaGraph\Support\Values;
 
 /**
  * Ergebnis von GET /debug_token.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Contracts;
+namespace KaiHempel\MetaGraph\Contracts;
 
-use Kuweh\MetaGraph\Data\StoredToken;
+use KaiHempel\MetaGraph\Data\StoredToken;
 
 /**
  * Optionale Erweiterung eines TokenRepository für den Token-Check.

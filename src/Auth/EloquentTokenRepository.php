@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth;
+namespace KaiHempel\MetaGraph\Auth;
 
 use Carbon\CarbonImmutable;
 use Illuminate\Database\Eloquent\Builder;
-use Kuweh\MetaGraph\Contracts\ListsTokens;
-use Kuweh\MetaGraph\Contracts\TokenRepository;
-use Kuweh\MetaGraph\Data\StoredToken;
-use Kuweh\MetaGraph\Models\MetaGraphToken;
+use KaiHempel\MetaGraph\Contracts\ListsTokens;
+use KaiHempel\MetaGraph\Contracts\TokenRepository;
+use KaiHempel\MetaGraph\Data\StoredToken;
+use KaiHempel\MetaGraph\Models\MetaGraphToken;
 
 /**
  * Speichert Tokens verschlüsselt in der Tabelle meta_graph_tokens.

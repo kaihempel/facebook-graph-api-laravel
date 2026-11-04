@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Jobs;
+namespace KaiHempel\MetaGraph\Jobs;
 
 use DateTimeInterface;
 use Illuminate\Bus\Queueable;
@@ -10,11 +10,11 @@ use Illuminate\Contracts\Queue\ShouldBeEncrypted;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Jobs\Concerns\ResolvesClient;
-use Kuweh\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
-use Kuweh\MetaGraph\Resources\Posts\PostDraft;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Jobs\Concerns\ResolvesClient;
+use KaiHempel\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
+use KaiHempel\MetaGraph\Resources\Posts\PostDraft;
 
 /**
  * Veröffentlicht oder plant einen Post. Ohne Page Token wird der gespeicherte Token der Seite verwendet.

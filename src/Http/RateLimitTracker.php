@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Http;
+namespace KaiHempel\MetaGraph\Http;
 
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Cache\Repository as Cache;
-use Kuweh\MetaGraph\AppConfig;
-use Kuweh\MetaGraph\Data\AppUsage;
-use Kuweh\MetaGraph\Data\BusinessUseCaseUsage;
-use Kuweh\MetaGraph\Data\RateLimitUsage;
-use Kuweh\MetaGraph\Events\RateLimitApproaching;
-use Kuweh\MetaGraph\Events\RateLimitHit;
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\AppConfig;
+use KaiHempel\MetaGraph\Data\AppUsage;
+use KaiHempel\MetaGraph\Data\BusinessUseCaseUsage;
+use KaiHempel\MetaGraph\Data\RateLimitUsage;
+use KaiHempel\MetaGraph\Events\RateLimitApproaching;
+use KaiHempel\MetaGraph\Events\RateLimitHit;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Support\Dispatch;
 
 /**
  * Wertet X-App-Usage und X-Business-Use-Case-Usage nach jeder Antwort aus

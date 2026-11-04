@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth\OAuth;
+namespace KaiHempel\MetaGraph\Auth\OAuth;
 
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Exceptions\ConfigurationException;
-use Kuweh\MetaGraph\Exceptions\InvalidStateException;
-use Kuweh\MetaGraph\Exceptions\LoginFailedException;
-use Kuweh\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Exceptions\ConfigurationException;
+use KaiHempel\MetaGraph\Exceptions\InvalidStateException;
+use KaiHempel\MetaGraph\Exceptions\LoginFailedException;
+use KaiHempel\MetaGraph\Graph\GraphClient;
 
 /**
  * Facebook Login: Login-URL bauen, State (CSRF) prüfen, Code gegen User Token tauschen.

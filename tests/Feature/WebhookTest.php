@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Event;
-use Kuweh\MetaGraph\Events\PageCommentReceived;
-use Kuweh\MetaGraph\Events\PageFeedChanged;
-use Kuweh\MetaGraph\Events\PageMentionReceived;
-use Kuweh\MetaGraph\Events\WebhookReceived;
-use Kuweh\MetaGraph\Jobs\ProcessWebhookPayload;
-use Kuweh\MetaGraph\Tests\TestCase;
-use Kuweh\MetaGraph\Webhooks\SignatureVerifier;
-use Kuweh\MetaGraph\Webhooks\WebhookPayload;
+use KaiHempel\MetaGraph\Events\PageCommentReceived;
+use KaiHempel\MetaGraph\Events\PageFeedChanged;
+use KaiHempel\MetaGraph\Events\PageMentionReceived;
+use KaiHempel\MetaGraph\Events\WebhookReceived;
+use KaiHempel\MetaGraph\Jobs\ProcessWebhookPayload;
+use KaiHempel\MetaGraph\Tests\TestCase;
+use KaiHempel\MetaGraph\Webhooks\SignatureVerifier;
+use KaiHempel\MetaGraph\Webhooks\WebhookPayload;
 
 function postWebhook(TestCase $test, string $body, ?string $signature = null, string $uri = '/meta-graph/webhook')
 {

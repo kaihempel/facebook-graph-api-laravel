@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Graph\Batch\BatchRequest;
-use Kuweh\MetaGraph\Media\MediaSource;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Graph\Batch\BatchRequest;
+use KaiHempel\MetaGraph\Media\MediaSource;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 use PHPUnit\Framework\AssertionFailedError;
 
 it('works as documented in the specification', function () {

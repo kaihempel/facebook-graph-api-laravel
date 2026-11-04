@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph;
+namespace KaiHempel\MetaGraph;
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Exceptions\ConfigurationException;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Exceptions\ConfigurationException;
 
 /**
  * Konfiguration einer Meta-App aus "meta-graph.apps".

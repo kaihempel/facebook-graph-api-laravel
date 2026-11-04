@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Jobs;
+namespace KaiHempel\MetaGraph\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
@@ -12,15 +12,15 @@ use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Data\ReelUpload;
-use Kuweh\MetaGraph\Events\MediaProcessingFinished;
-use Kuweh\MetaGraph\GraphManager;
-use Kuweh\MetaGraph\Jobs\Concerns\ResolvesClient;
-use Kuweh\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
-use Kuweh\MetaGraph\Resources\Reels\ReelResource;
-use Kuweh\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Data\ReelUpload;
+use KaiHempel\MetaGraph\Events\MediaProcessingFinished;
+use KaiHempel\MetaGraph\GraphManager;
+use KaiHempel\MetaGraph\Jobs\Concerns\ResolvesClient;
+use KaiHempel\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
+use KaiHempel\MetaGraph\Resources\Reels\ReelResource;
+use KaiHempel\MetaGraph\Support\Dispatch;
 
 /**
  * Reel-Flow als Job: Upload, Status-Polling mit release(), Finish, Verarbeitung abwarten.

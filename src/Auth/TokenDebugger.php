@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth;
+namespace KaiHempel\MetaGraph\Auth;
 
-use Kuweh\MetaGraph\Data\TokenInfo;
-use Kuweh\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Data\TokenInfo;
+use KaiHempel\MetaGraph\Graph\GraphClient;
 
 /**
  * GET /debug_token mit App Token.

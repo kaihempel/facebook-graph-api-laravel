@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Events;
+namespace KaiHempel\MetaGraph\Events;
 
 use Carbon\CarbonImmutable;
-use Kuweh\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Auth\AccessToken;
 
 /**
  * Ein User Token läuft bald ab (Token-Check).

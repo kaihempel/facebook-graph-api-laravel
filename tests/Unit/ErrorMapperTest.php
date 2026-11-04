@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Data\RateLimitUsage;
-use Kuweh\MetaGraph\Exceptions\AuthenticationException;
-use Kuweh\MetaGraph\Exceptions\DuplicatePostException;
-use Kuweh\MetaGraph\Exceptions\ErrorMapper;
-use Kuweh\MetaGraph\Exceptions\GraphException;
-use Kuweh\MetaGraph\Exceptions\LinkScrapeException;
-use Kuweh\MetaGraph\Exceptions\PageRoleException;
-use Kuweh\MetaGraph\Exceptions\PermissionException;
-use Kuweh\MetaGraph\Exceptions\PolicyBlockException;
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\Exceptions\TransientException;
-use Kuweh\MetaGraph\Exceptions\UserActionRequiredException;
-use Kuweh\MetaGraph\Graph\GraphRequest;
-use Kuweh\MetaGraph\Graph\GraphResponse;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Data\RateLimitUsage;
+use KaiHempel\MetaGraph\Exceptions\AuthenticationException;
+use KaiHempel\MetaGraph\Exceptions\DuplicatePostException;
+use KaiHempel\MetaGraph\Exceptions\ErrorMapper;
+use KaiHempel\MetaGraph\Exceptions\GraphException;
+use KaiHempel\MetaGraph\Exceptions\LinkScrapeException;
+use KaiHempel\MetaGraph\Exceptions\PageRoleException;
+use KaiHempel\MetaGraph\Exceptions\PermissionException;
+use KaiHempel\MetaGraph\Exceptions\PolicyBlockException;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Exceptions\TransientException;
+use KaiHempel\MetaGraph\Exceptions\UserActionRequiredException;
+use KaiHempel\MetaGraph\Graph\GraphRequest;
+use KaiHempel\MetaGraph\Graph\GraphResponse;
 
 it('maps every documented code to exactly one exception', function (int $code, ?int $subcode, string $type, string $expected) {
     $exception = ErrorMapper::fromError(array_filter([

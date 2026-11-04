@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Data;
+namespace KaiHempel\MetaGraph\Data;
 
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Support\Values;
 
 /**
  * Eine Seite aus /{user-id}/accounts inklusive Page Token und Tasks.

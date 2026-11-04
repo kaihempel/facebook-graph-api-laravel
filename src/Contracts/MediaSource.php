@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Contracts;
+namespace KaiHempel\MetaGraph\Contracts;
 
 /**
  * Quelle für Fotos, Videos und Reels.

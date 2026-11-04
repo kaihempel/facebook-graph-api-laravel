@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Jobs;
+namespace KaiHempel\MetaGraph\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
@@ -11,13 +11,13 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Kuweh\MetaGraph\Data\WebhookChange;
-use Kuweh\MetaGraph\Events\PageCommentReceived;
-use Kuweh\MetaGraph\Events\PageFeedChanged;
-use Kuweh\MetaGraph\Events\PageMentionReceived;
-use Kuweh\MetaGraph\Events\WebhookReceived;
-use Kuweh\MetaGraph\Support\Dispatch;
-use Kuweh\MetaGraph\Webhooks\WebhookPayload;
+use KaiHempel\MetaGraph\Data\WebhookChange;
+use KaiHempel\MetaGraph\Events\PageCommentReceived;
+use KaiHempel\MetaGraph\Events\PageFeedChanged;
+use KaiHempel\MetaGraph\Events\PageMentionReceived;
+use KaiHempel\MetaGraph\Events\WebhookReceived;
+use KaiHempel\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Webhooks\WebhookPayload;
 
 /**
  * Zerlegt eine Webhook-Zustellung, dedupliziert (Replay-Schutz) und feuert Events.

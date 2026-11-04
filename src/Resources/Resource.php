@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources;
+namespace KaiHempel\MetaGraph\Resources;
 
-use Kuweh\MetaGraph\Graph\GraphClient;
-use Kuweh\MetaGraph\Graph\GraphResponse;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Graph\GraphResponse;
+use KaiHempel\MetaGraph\Support\Values;
 
 /**
  * Basis aller Ressourcen. Ressourcen bauen ausschließlich auf dem GraphClient auf.

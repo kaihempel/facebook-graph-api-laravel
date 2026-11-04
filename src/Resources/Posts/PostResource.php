@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Resources\Posts;
+namespace KaiHempel\MetaGraph\Resources\Posts;
 
 use Carbon\CarbonImmutable;
 use DateTimeInterface;
 use Illuminate\Support\LazyCollection;
 use InvalidArgumentException;
-use Kuweh\MetaGraph\Contracts\MediaSource;
-use Kuweh\MetaGraph\Data\Post;
-use Kuweh\MetaGraph\Events\PostFailed;
-use Kuweh\MetaGraph\Events\PostPublished;
-use Kuweh\MetaGraph\Events\PostScheduled;
-use Kuweh\MetaGraph\Graph\FieldSet;
-use Kuweh\MetaGraph\Resources\Resource;
-use Kuweh\MetaGraph\Support\Dispatch;
+use KaiHempel\MetaGraph\Contracts\MediaSource;
+use KaiHempel\MetaGraph\Data\Post;
+use KaiHempel\MetaGraph\Events\PostFailed;
+use KaiHempel\MetaGraph\Events\PostPublished;
+use KaiHempel\MetaGraph\Events\PostScheduled;
+use KaiHempel\MetaGraph\Graph\FieldSet;
+use KaiHempel\MetaGraph\Resources\Resource;
+use KaiHempel\MetaGraph\Support\Dispatch;
 use Throwable;
 
 /**

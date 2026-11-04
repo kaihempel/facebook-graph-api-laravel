@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Support;
+namespace KaiHempel\MetaGraph\Support;
 
 /**
  * Maskiert sensible Werte (Tokens, appsecret_proof, Secrets) für Logs und Exceptions.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth;
+namespace KaiHempel\MetaGraph\Auth;
 
 enum TokenType: string
 {

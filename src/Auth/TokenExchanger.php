@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Auth;
+namespace KaiHempel\MetaGraph\Auth;
 
 use Illuminate\Support\Collection;
-use Kuweh\MetaGraph\Data\PageConnection;
-use Kuweh\MetaGraph\Graph\GraphClient;
+use KaiHempel\MetaGraph\Data\PageConnection;
+use KaiHempel\MetaGraph\Graph\GraphClient;
 
 /**
  * Tauscht kurzlebige User Tokens gegen Long-lived Tokens (ca. 60 Tage) und

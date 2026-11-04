@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Tests;
+namespace KaiHempel\MetaGraph\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Sleep;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Data\PageConnection;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\MetaGraphServiceProvider;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Data\PageConnection;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\MetaGraphServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

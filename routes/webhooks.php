@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
-use Kuweh\MetaGraph\Http\Controllers\WebhookController;
+use KaiHempel\MetaGraph\Http\Controllers\WebhookController;
 
 /** @var array<array-key, string> $middleware */
 $middleware = config('meta-graph.webhooks.middleware', []);

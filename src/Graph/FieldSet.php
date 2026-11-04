@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Graph;
+namespace KaiHempel\MetaGraph\Graph;
 
 use Stringable;
 

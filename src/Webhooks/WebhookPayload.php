@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Webhooks;
+namespace KaiHempel\MetaGraph\Webhooks;
 
-use Kuweh\MetaGraph\Data\WebhookChange;
-use Kuweh\MetaGraph\Support\Values;
+use KaiHempel\MetaGraph\Data\WebhookChange;
+use KaiHempel\MetaGraph\Support\Values;
 
 /**
  * Zerlegt eine Zustellung { object, entry[] } in WebhookChange-DTOs (pro entry und changes[]).

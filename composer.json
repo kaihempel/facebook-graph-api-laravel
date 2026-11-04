@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kuweh\\MetaGraph\\": "src/"
+            "KaiHempel\\MetaGraph\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kuweh\\MetaGraph\\Tests\\": "tests/"
+            "KaiHempel\\MetaGraph\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -57,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kuweh\\MetaGraph\\MetaGraphServiceProvider"
+                "KaiHempel\\MetaGraph\\MetaGraphServiceProvider"
             ],
             "aliases": {
-                "MetaGraph": "Kuweh\\MetaGraph\\Facades\\MetaGraph"
+                "MetaGraph": "KaiHempel\\MetaGraph\\Facades\\MetaGraph"
             }
         }
     },

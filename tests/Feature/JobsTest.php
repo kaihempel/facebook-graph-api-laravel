@@ -6,21 +6,21 @@ use Carbon\CarbonImmutable;
 use Illuminate\Contracts\Queue\Job;
 use Illuminate\Contracts\Queue\ShouldBeEncrypted;
 use Illuminate\Support\Facades\Event;
-use Kuweh\MetaGraph\Auth\AccessToken;
-use Kuweh\MetaGraph\Events\MediaProcessingFinished;
-use Kuweh\MetaGraph\Events\PageConnected;
-use Kuweh\MetaGraph\Events\PostScheduled;
-use Kuweh\MetaGraph\Exceptions\MediaProcessingException;
-use Kuweh\MetaGraph\Exceptions\RateLimitException;
-use Kuweh\MetaGraph\Facades\MetaGraph;
-use Kuweh\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
-use Kuweh\MetaGraph\Jobs\PublishPost;
-use Kuweh\MetaGraph\Jobs\PublishReel;
-use Kuweh\MetaGraph\Jobs\RefreshPageTokens;
-use Kuweh\MetaGraph\Jobs\UploadVideo;
-use Kuweh\MetaGraph\Media\MediaSource;
-use Kuweh\MetaGraph\Resources\Posts\PostDraft;
-use Kuweh\MetaGraph\Testing\GraphFake;
+use KaiHempel\MetaGraph\Auth\AccessToken;
+use KaiHempel\MetaGraph\Events\MediaProcessingFinished;
+use KaiHempel\MetaGraph\Events\PageConnected;
+use KaiHempel\MetaGraph\Events\PostScheduled;
+use KaiHempel\MetaGraph\Exceptions\MediaProcessingException;
+use KaiHempel\MetaGraph\Exceptions\RateLimitException;
+use KaiHempel\MetaGraph\Facades\MetaGraph;
+use KaiHempel\MetaGraph\Jobs\Middleware\RespectMetaRateLimits;
+use KaiHempel\MetaGraph\Jobs\PublishPost;
+use KaiHempel\MetaGraph\Jobs\PublishReel;
+use KaiHempel\MetaGraph\Jobs\RefreshPageTokens;
+use KaiHempel\MetaGraph\Jobs\UploadVideo;
+use KaiHempel\MetaGraph\Media\MediaSource;
+use KaiHempel\MetaGraph\Resources\Posts\PostDraft;
+use KaiHempel\MetaGraph\Testing\GraphFake;
 
 /**
  * Bindet einen gefakten Queue-Job, um release()-Aufrufe zu prüfen.

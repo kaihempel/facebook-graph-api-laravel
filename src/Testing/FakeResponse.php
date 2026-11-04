@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kuweh\MetaGraph\Testing;
+namespace KaiHempel\MetaGraph\Testing;
 
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\Factory;
