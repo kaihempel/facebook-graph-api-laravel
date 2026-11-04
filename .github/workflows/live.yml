@@ -35,7 +35,7 @@ jobs:
 
       - name: Checkout
         if: steps.secrets.outputs.available == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup PHP
         if: steps.secrets.outputs.available == 'true'
